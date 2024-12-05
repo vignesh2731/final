@@ -1,0 +1,166 @@
+.bag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .bag {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 600px;
+    height: 90vh;
+    max-height: 700px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .bagproduct {
+    display: flex;
+    background-color: rgb(254, 246, 218);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .bagproduct img {
+    width: 75px;
+    height: 120px;
+    margin-right: 20px;
+    border-radius: 4px;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  .product-description {
+    color: gray;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .size-qty {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .size-qty div {
+    background-color: rgb(197, 197, 197);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .order-details {
+    background-color: rgb(254, 246, 218);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .order-item, .amount-payable {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(254, 246, 218);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .payment button {
+    border: none;
+    background-color: rgb(197, 197, 197);
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .bag {
+      width: 95vw;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .bagproduct {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bagproduct img {
+      width: 120px;
+      height: 160px;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    .product-details {
+      text-align: center;
+    }
+  
+    .size-qty {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .payment button {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .bag {
+      width: 100vw;
+      padding: 10px;
+    }
+  
+    .bagproduct img {
+      width: 100px;
+      height: 140px;
+    }
+  
+    .product-description {
+      font-size: 12px;
+    }
+  
+    .size-qty div {
+      padding: 4px 8px;
+    }
+  
+    .payment button {
+      font-size: 14px;
+      padding: 12px 25px;
+    }
+  }
+  

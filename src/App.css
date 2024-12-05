@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body, html {
+  overflow: visible;
+  height: auto;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #333;
+}
+
+.main-content {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 45%;
+  max-width: 50%;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.shop-now-btn {
+  padding: 12px 30px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #e6584e;
+}
+
+.hero-image {
+  flex: 1 1 45%;
+  text-align: right;
+}
+
+.featured-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signature-section {
+  margin: 60px 0;
+}
+
+.signature-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.signature-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: left;
+}
+
+.intro-section, .why-choose-section {
+  flex: 1 1 45%;
+}
+
+.intro-section p, .why-choose-section p {
+  line-height: 1.8;
+  color: #555;
+}
+
+.most-popular-section {
+  margin: 60px 0;
+}
+
+.most-popular-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.popular-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 30%;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .signature-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .intro-section, .why-choose-section {
+    width: 100%;
+  }
+
+  .popular-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* Hide scrollbar but allow scrolling */

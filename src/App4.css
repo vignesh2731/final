@@ -1,0 +1,154 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+.top-nav {
+  background-color: #f5e7d0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.icons i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-links {
+  margin-top: 20px;
+}
+
+.sidebar-links h4 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.sidebar-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-links ul li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: 20px;
+  color: red;
+  background: none;
+  border: 1px solid red;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  text-align: center; 
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  flex-wrap: nowrap; /* Ensure items don't wrap to the next line */
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px; /* Add spacing between items */
+}
+
+.category-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #fff;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.category-item p {
+  font-size: 14px;
+  color: black;
+}
+
+
+.designers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.designer-card {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  width: 150px;
+}
+
+.designer-card img {
+  width: 100%;
+  border-radius: 5px;
+}
